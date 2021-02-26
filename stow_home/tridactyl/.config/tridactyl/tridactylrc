@@ -1,0 +1,17 @@
+colourscheme base16-gruvbox-dark-hard
+
+bind S back
+bind s scrollpx -50
+bind T tabnext
+bind t scrollline 10
+bind N tabprev
+bind n scrollline -10
+bind B forward
+bind b scrollpx 50
+
+bind H fillcmdline tabopen search
+bind h fillcmdline open search
+bind J current_url tabopen
+bind j fillcmdline tabopen
+bind L fillcmdline taball
+bind l fillcmdline tab

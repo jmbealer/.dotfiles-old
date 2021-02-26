@@ -1,0 +1,46 @@
+Script started on 2021-02-14 16:43:52-06:00 [TERM="alacritty" TTY="/dev/pts/1" COLUMNS="292" LINES="63"]
+[?25l[?7l[0m[36m[1m                   '
+                  'o'
+                 'ooo'
+                'ooxoo'
+               'ooxxxoo'
+              'oookkxxoo'
+             'oiioxkkxxoo'
+            ':;:iiiioxxxoo'
+               `'.;::ioxxoo'
+          '-.      `':;jiooo'
+         'oooio-..     `'i:io'
+        'ooooxxxxoio:,.   `'-;'
+       'ooooxxxxxkkxoooIi:-.  `'
+      'ooooxxxxxkkkkxoiiiiiji'
+     'ooooxxxxxkxxoiiii:'`     .i'
+    'ooooxxxxxoi:::'`       .;ioxo'
+   'ooooxooi::'`         .:iiixkxxo'
+  'ooooi:'`                `'';ioxxo'
+ 'i:'`                          '':io'
+'`                                   `'[0m
+[20A[9999999D[42C[0m[1m[36m[1musr00[0m@[36m[1martix[0m 
+[42C[0m-----------[0m 
+[42C[0m[36m[1mOS[0m[0m:[0m Artix Linux x86_64[0m 
+[42C[0m[36m[1mHost[0m[0m:[0m Serval WS serw12[0m 
+[42C[0m[36m[1mKernel[0m[0m:[0m 5.10.16-zen1-1-zen[0m 
+[42C[0m[36m[1mUptime[0m[0m:[0m 37 mins[0m 
+[42C[0m[36m[1mPackages[0m[0m:[0m 622 (pacman)[0m 
+[42C[0m[36m[1mShell[0m[0m:[0m zsh 5.8[0m 
+[42C[0m[36m[1mResolution[0m[0m:[0m 3840x2160[0m 
+[42C[0m[36m[1mWM[0m[0m:[0m sway[0m 
+[42C[0m[36m[1mTheme[0m[0m:[0m Adwaita [GTK3][0m 
+[42C[0m[36m[1mIcons[0m[0m:[0m Adwaita [GTK3][0m 
+[42C[0m[36m[1mTerminal[0m[0m:[0m script[0m 
+[42C[0m[36m[1mCPU[0m[0m:[0m AMD Ryzen 9 3900 (24) @ 3.100GHz[0m 
+[42C[0m[36m[1mGPU[0m[0m:[0m NVIDIA GeForce RTX 2070 Mobile / Max-Q Refresh[0m 
+[42C[0m[36m[1mMemory[0m[0m:[0m 4495MiB / 64272MiB[0m 
+
+[42C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[42C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                    [0m[27m[24m[J[1;36m~/.config/vifm[0m 
+[1;32m❯[0m [K[?2004h[32mcp[39m [36m-r[39m [4m[35m/mnt/usr00/.config/zathura/[24m[39m [4m[35m~/.config[24m[39m[43D[39m [39m  [39m [39m  [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m  [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [43D[32mcp[39m [36m-r[39m [4m[35m/mnt/usr00/.config/zathura/[24m[39m [4m[35m~/.config[24m[39m[40D[3P[37C   [37D[24m[36m-[24m[36mr[39m[24m[39m [4m[35m/[4m[35mm[4m[35mn[4m[35mt[4m[35m/[4m[35mu[4m[35ms[4m[35mr[4m[35m0[4m[35m0[4m[35m/[4m[35m.[4m[35mc[4m[35mo[4m[35mn[4m[35mf[4m[35mi[4m[35mg[4m[35m/[4m[35mz[4m[35ma[4m[35mt[4m[35mh[4m[35mu[4m[35mr[4m[35ma[4m[35m/[24m[39m[24m[39m [4m[35m~[4m[35m/[4m[35m.[4m[35mc[4m[35mo[4m[35mn[4m[35mfig[24m[39m[43D[39m [39m  [39m [39m  [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m  [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [24m[39m [43D[1m[31me[0m[39m[90mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[?2004l
+
+Script done on 2021-02-14 16:43:59-06:00 [COMMAND_EXIT_CODE="0"]
