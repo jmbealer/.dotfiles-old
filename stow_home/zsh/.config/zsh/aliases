@@ -1,0 +1,11 @@
+alias l="exa -laFh --time-style=long-iso"
+
+alias nv="nvim"
+alias nvw="nvim ~/wiki/000-master-index.md"
+
+alias v="~/.config/vifm/scripts/vifmrun ."
+alias vf="vifm"
+
+alias cat="bat"
+
+alias shutdown="sudo openrc-shutdown -p 0"

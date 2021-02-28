@@ -1,15 +1,22 @@
-lua require('init') 
+lua require('init')
 " lua/init.lua
+
+source $HOME/.config/nvim/coc.vim
+
 autocmd BufWritePost plugins.lua PackerCompile
+
+
 
 syntax enable
 " syntax on
+set foldexpr=nvim_treesitter#foldexpr()
 
+let g:AutoPairsFlyMode = 1
 
 autocmd! BufEnter *.md set syntax=markdown.pandoc
 " autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 
-autocmd BufEnter * ApcEnable
+" autocmd BufEnter * ApcEnable
 " enable this plugin for filetypes, '*' for all files.
 " let g:apc_enable_ft = {'*'}
 
@@ -23,34 +30,23 @@ set completeopt=menu,menuone,noselect
 " suppress annoy messages.
 set shortmess+=c
 
-" configure treesitter
-lua << EOF
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  highlight = {
-    enable = true,              -- false will disable the whole extension
-    disable = { "c", "rust" },  -- list of language that will be disabled
-  },
-}
-EOF
 
 " configure nvcode-color-schemes
 let g:nvcode_termcolors=256
 
-syntax on
-colorscheme gruvbox
+" colorscheme gruvbox
 
 
 " checks if your terminal has 24-bit color support
-if (has("termguicolors"))
-    set termguicolors
-    hi LineNr ctermbg=NONE guibg=NONE
-endif
+" if (has("termguicolors"))
+    " set termguicolors
+    " hi LineNr ctermbg=NONE guibg=NONE
+" endif
 
-autocmd BufEnter * lua require'completion'.on_attach()
+" autocmd BufEnter * lua require'completion'.on_attach()
 "Use <Tab> and <S-Tab> to navigate through popup menu
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 let g:dashboard_default_executive ='telescope'
 

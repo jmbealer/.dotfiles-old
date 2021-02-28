@@ -1,36 +1,42 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 -- Only required if you have packer in your `opt` pack
 vim.cmd [[packadd packer.nvim]]
--- Only if your version of Neovim doesn't have https://github.com/neovim/neovim/pull/12632 merged
--- vim._update_package_paths()
 
 return require('packer').startup(function()
   -- Packer can manage itself as an optional plugin
-  use {'wbthomason/packer.nvim', opt = true}
-  use {'christianchiarulli/nvcode-color-schemes.vim'}
-  -- use {'nvim-treesitter/nvim-treesitter'}
-  use {'b3nj5m1n/kommentary'}
-    require('kommentary.config').use_extended_mappings()
-  use {'nvim-lua/completion-nvim'}
+use {'wbthomason/packer.nvim', opt = true}
+ use {'tpope/vim-commentary'}
+ use {'tpope/vim-surround'}
+  use {'tpope/vim-repeat'}
+  use {'tpope/vim-endwise'}
+-- Completion
+  use 'neoclide/coc.nvim'
+  -- use {'nvim-lua/completion-nvim'}
+  -- use {'ojroques/nvim-hardline'}
+    -- require('hardline').setup {}
+-- Statusline
   use {'glepnir/galaxyline.nvim',
     branch = 'main',
     -- your statusline
-    config = function() require'spaceline' end,
+    -- config = function() require'spaceline' end,
+    config = function() require'eviline' end,
     -- some optional icons
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
-  use {'windwp/nvim-autopairs'}
-    require('nvim-autopairs').setup()
+ use {'jiangmiao/auto-pairs'}
+  -- use {'windwp/nvim-autopairs'}
+    -- require('nvim-autopairs').setup()
   use {'kyazdani42/nvim-tree.lua'}
   use {'liuchengxu/vim-which-key'}
   use {'glepnir/dashboard-nvim'}
-  use {
-  'nvim-telescope/telescope.nvim',
+-- Fuzzy Finder
+  use {'nvim-telescope/telescope.nvim',
   requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
   }
+-- Colors
   use {'norcalli/nvim-colorizer.lua'}
     require'colorizer'.setup()
+-- Colorscheme
+  use {'christianchiarulli/nvcode-color-schemes.vim'}
   -- use {'beauwilliams/focus.nvim'}
   -- place me somewhere in your init.lua
     -- local focus = require('focus')
@@ -45,9 +51,40 @@ return require('packer').startup(function()
     -- vim.g.vimwiki_filetypes = {'markdown', 'pandoc'}
     vim.g.vimwiki_folding = 'custom'
     -- vim.g.vimwiki_folding = 'expr'
-  use 'konfekt/complete-common-words.vim'
-  use 'skywind3000/vim-auto-popmenu'
+  -- use 'konfekt/complete-common-words.vim'
+  -- use 'skywind3000/vim-auto-popmenu'
   use 'plasticboy/vim-markdown'
+  use 'mhinz/vim-signify'
+-- Terminal integration
+  use 'akinsho/nvim-toggleterm.lua'
+    require"toggleterm".setup{
+      size = 20,
+      open_mapping = [[<c-t>]],
+      shade_filetypes = {},
+      shade_terminals = true,
+      shading_factor = '<number>', -- the degree by which to darken to terminal colour, default: 1 for dark backgrounds, 3 for light
+      start_in_insert = true,
+      persist_size = true,
+      direction = 'horizontal',
+    }
+
+  -- use 'p00f/nvim-ts-rainbow'
+    -- require'nvim-treesitter.configs'.setup {
+      -- rainbow = {
+      -- enable = true
+      -- }
+    -- }
+
+-- Tabline
+  use 'akinsho/nvim-bufferline.lua'
+  require'bufferline'.setup{
+    options = {
+      always_show_bufferline = false,
+    }
+  }
+
+  -- use 'adelarsq/neovcs.vim'
+
 
   -- Simple plugins can be specified as strings
   -- use '9mm/vim-closer'
@@ -93,6 +130,7 @@ return require('packer').startup(function()
 
   -- Post-install/update hook with neovim command
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  require('treesitter')
 
   -- Post-install/update hook with call of vimscript function with argument
   use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }

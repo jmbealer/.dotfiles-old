@@ -1,0 +1,54 @@
+set selection-clipboard clipboard
+set window-title-home-tilde true
+set page-padding 1
+
+set font "monospace normal 10"
+
+set default-bg                  "#1d2021"
+set default-fg                  "#3c3836"
+
+set statusbar-bg                "#504945"
+set statusbar-fg                "#bdae93"
+
+set inputbar-bg                 "#1d2021"
+set inputbar-fg                 "#fbf1c7"
+
+set notification-error-bg       "#1d2021"
+set notification-error-fg       "#fb4934"
+
+set notification-warning-bg     "#1d2021"
+set notification-warning-fg     "#fb4934"
+
+set highlight-color             "#fabd2f"
+set highlight-active-color      "#83a598"
+
+set completion-bg               "#3c3836"
+set completion-fg               "#83a598"
+
+set completion-highlight-bg     "#83a598"
+set completion-highlight-fg     "#fbf1c7"
+
+set recolor-lightcolor          "#1d2021"
+set recolor-darkcolor           "#ebdbb2"
+set completion-group-bg         "#3c3836"
+
+
+set recolor                     "true"
+set recolor-keephue true
+#
+## setting recolor-keep true will keep any color your pdf has.
+## if it is false, itll just be black and white
+#
+## Rest of your configs go here:
+
+# Smooth scrolling:
+set smooth-scroll true
+set scroll-step 300
+
+map t scroll left
+map r scroll down
+map s scroll up
+map z scroll right
+
+map T navigate next
+map N navigate previous

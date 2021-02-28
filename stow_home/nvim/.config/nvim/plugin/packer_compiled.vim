@@ -32,13 +32,13 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
-  ["complete-common-words.vim"] = {
+  ["auto-pairs"] = {
     loaded = true,
-    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/complete-common-words.vim"
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
-  ["completion-nvim"] = {
+  ["coc.nvim"] = {
     loaded = true,
-    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/completion-nvim"
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/coc.nvim"
   },
   ["dashboard-nvim"] = {
     loaded = true,
@@ -49,25 +49,25 @@ _G.packer_plugins = {
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/firenvim"
   },
   ["galaxyline.nvim"] = {
-    config = { "\27LJ\2\n)\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\14spaceline\frequire\0" },
+    config = { "\27LJ\2\n'\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\feviline\frequire\0" },
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
-  },
-  kommentary = {
-    loaded = true,
-    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/kommentary"
   },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
   },
-  ["nvim-autopairs"] = {
+  ["nvim-bufferline.lua"] = {
     loaded = true,
-    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+  },
+  ["nvim-toggleterm.lua"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-toggleterm.lua"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -76,6 +76,10 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -98,13 +102,29 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
-  ["vim-auto-popmenu"] = {
+  ["vim-commentary"] = {
     loaded = true,
-    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/vim-auto-popmenu"
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/vim-commentary"
+  },
+  ["vim-endwise"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/vim-endwise"
   },
   ["vim-markdown"] = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/vim-markdown"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/vim-repeat"
+  },
+  ["vim-signify"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/vim-signify"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/vim-surround"
   },
   ["vim-which-key"] = {
     loaded = true,
@@ -117,7 +137,7 @@ _G.packer_plugins = {
 }
 
 -- Config for: galaxyline.nvim
-try_loadstring("\27LJ\2\n)\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\14spaceline\frequire\0", "config", "galaxyline.nvim")
+try_loadstring("\27LJ\2\n'\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\feviline\frequire\0", "config", "galaxyline.nvim")
 END
 
 catch
