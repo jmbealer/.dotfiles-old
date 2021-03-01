@@ -32,6 +32,10 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/auto-pairs"
@@ -77,10 +81,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
@@ -97,6 +97,10 @@ _G.packer_plugins = {
   ["popup.nvim"] = {
     loaded = true,
     path = "/home/usr00/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["startuptime.vim"] = {
+    loaded = true,
+    path = "/home/usr00/.local/share/nvim/site/pack/packer/start/startuptime.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,

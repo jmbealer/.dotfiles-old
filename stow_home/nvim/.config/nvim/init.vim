@@ -22,7 +22,7 @@ autocmd! BufEnter *.md set syntax=markdown.pandoc
 
 " source for dictionary, current or other loaded buffers, see ':help cpt'
 set cpt+=.,k,w,b
-set spell
+" set spell
 
 " don't select the first item.
 set completeopt=menu,menuone,noselect

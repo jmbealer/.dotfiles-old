@@ -2,59 +2,57 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
-  -- Packer can manage itself as an optional plugin
+-- Packer can manage itself as an optional plugin
 use {'wbthomason/packer.nvim', opt = true}
- use {'tpope/vim-commentary'}
- use {'tpope/vim-surround'}
-  use {'tpope/vim-repeat'}
-  use {'tpope/vim-endwise'}
+
+use {'tpope/vim-commentary'}
+use {'tpope/vim-surround'}
+use {'tpope/vim-repeat'}
+use {'tpope/vim-endwise'}
+
+use 'tweekmonster/startuptime.vim'
+
 -- Completion
-  use 'neoclide/coc.nvim'
+use 'neoclide/coc.nvim'
   -- use {'nvim-lua/completion-nvim'}
-  -- use {'ojroques/nvim-hardline'}
-    -- require('hardline').setup {}
 -- Statusline
-  use {'glepnir/galaxyline.nvim',
-    branch = 'main',
-    -- your statusline
-    -- config = function() require'spaceline' end,
-    config = function() require'eviline' end,
-    -- some optional icons
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
- use {'jiangmiao/auto-pairs'}
+use {'glepnir/galaxyline.nvim', branch = 'main',
+  config = function() require'eviline' end,
+  requires = {'kyazdani42/nvim-web-devicons', opt = true}}
+
+use {'jiangmiao/auto-pairs'}
   -- use {'windwp/nvim-autopairs'}
     -- require('nvim-autopairs').setup()
-  use {'kyazdani42/nvim-tree.lua'}
-  use {'liuchengxu/vim-which-key'}
-  use {'glepnir/dashboard-nvim'}
+-- File Explorer
+use {'kyazdani42/nvim-tree.lua'}
+
+use {'liuchengxu/vim-which-key'}
+use {'glepnir/dashboard-nvim'}
 -- Fuzzy Finder
-  use {'nvim-telescope/telescope.nvim',
-  requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-  }
+use {'nvim-telescope/telescope.nvim',
+  requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}}
 -- Colors
-  use {'norcalli/nvim-colorizer.lua'}
-    require'colorizer'.setup()
+use {'norcalli/nvim-colorizer.lua'}
+  require'colorizer'.setup()
 -- Colorscheme
-  use {'christianchiarulli/nvcode-color-schemes.vim'}
-  -- use {'beauwilliams/focus.nvim'}
+use {'christianchiarulli/nvcode-color-schemes.vim'}
+  vim.g.nvcode_termcolor=256
+-- use {'beauwilliams/focus.nvim'}
   -- place me somewhere in your init.lua
     -- local focus = require('focus')
     -- focus.width = 100
-  use {'vimwiki/vimwiki'}
-    vim.g.vimwiki_list = {{
-      path = '~/wiki/',
-      syntax = 'markdown',
-      ext = '.md'}}
+use {'vimwiki/vimwiki'}
+  vim.g.vimwiki_list = {{
+    path = '~/wiki/',
+    syntax = 'markdown',
+    ext = '.md'}}
     vim.g.vimwiki_global_ext = 1
     -- vim.g.vimwiki_filetypes = {'markdown'}
     -- vim.g.vimwiki_filetypes = {'markdown', 'pandoc'}
     vim.g.vimwiki_folding = 'custom'
     -- vim.g.vimwiki_folding = 'expr'
-  -- use 'konfekt/complete-common-words.vim'
-  -- use 'skywind3000/vim-auto-popmenu'
-  use 'plasticboy/vim-markdown'
-  use 'mhinz/vim-signify'
+use 'plasticboy/vim-markdown'
+use 'mhinz/vim-signify'
 -- Terminal integration
   use 'akinsho/nvim-toggleterm.lua'
     require"toggleterm".setup{
@@ -68,12 +66,12 @@ use {'wbthomason/packer.nvim', opt = true}
       direction = 'horizontal',
     }
 
-  -- use 'p00f/nvim-ts-rainbow'
-    -- require'nvim-treesitter.configs'.setup {
-      -- rainbow = {
-      -- enable = true
-      -- }
-    -- }
+
+-- use 'kamykn/spelunker.vim'
+  -- vim.g.spelunker_check_type = 2
+use 'antoinemadec/FixCursorHold.nvim'
+  vim.g.cursorhold_updatetime = 100
+-- use 'psliwka/vim-smoothie'
 
 -- Tabline
   use 'akinsho/nvim-bufferline.lua'
@@ -153,3 +151,10 @@ use {'wbthomason/packer.nvim', opt = true}
   -- You can alias plugin names
   -- use {'dracula/vim', as = 'dracula'}
 end)
+
+-- :PackerCompile -- You must run this whenever you make changes to your plugin configuration
+-- :PackerInstall -- Only install missing plugins
+-- :PackerUpdate -- Update and install plugins
+-- :PackerClean -- Remove any disabled or unused plugins
+-- :PackerSync -- Performs `PackerClean` and then `PackerUpdate`
+
