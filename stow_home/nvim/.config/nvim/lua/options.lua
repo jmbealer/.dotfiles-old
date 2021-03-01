@@ -17,7 +17,7 @@ vim.o.cmdheight = 2
 -- set shortmess+=c
 
 vim.wo.signcolumn='number'
-vim.wo.numberwidth = 1
+-- vim.wo.numberwidth = 1
 
 -- Shift & Indention Options
 vim.o.tabstop = 2
@@ -60,7 +60,8 @@ vim.o.smartcase = true
 -- ""Performance Options
 -- set complete-=i
 -- vim.o.completeopt = 'menu,noselect'
-vim.o.completeopt = 'menuone,noinsert,noselect'
+-- vim.o.completeopt = 'menuone,noinsert,noselect'
+vim.o.completeopt = 'menu,menuone,noselect'
 vim.o.lazyredraw = true
 
 -- Text Rendering Options
@@ -135,13 +136,16 @@ vim.o.scrolljump =-25
 -- "Vertically Center document when entering Insert mode
 -- " autocmd InsertEnter * norm zz
 
--- vim.wo.spell = true
+vim.wo.spell = true
 -- vim.o.dictionary = '/usr/share/dict/words'
 
 vim.bo.swapfile = false
 
 vim.o.scrolloff = 999
 vim.o.cpoptions = vim.o.cpoptions ..'n'
+-- vim.bo.complete = '.,w,b,u,t,k'
+-- vim.cmd('set spell')
 
 vim.cmd('au! BufWritePost $MYVIMRC source %')
 vim.cmd('autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o')
+

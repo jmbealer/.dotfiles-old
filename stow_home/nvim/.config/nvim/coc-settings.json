@@ -1,0 +1,97 @@
+{
+  // diagnostic-languageserver
+  "diagnostic-languageserver.filetypes": {
+    "vim": "vint",
+    "email": "languagetool",
+    "markdown": [ "write-good", "markdownlint" ],
+    "vimwiki.markdown.pandoc": [ "write-good", "markdownlint" ],
+    "sh": "shellcheck",
+    "elixir": ["mix_credo", "mix_credo_compile"],
+    "eelixir": ["mix_credo", "mix_credo_compile"],
+    "php": ["phpstan", "psalm"],
+  },
+  "coc.preferences.enableMarkdown": true,
+  "markdownlint.config": {
+    "markdownlint.enable": true,
+    "markdownlint.filetypes": [
+       "asciidoc",
+       "asciidoctor",
+       "adoc",
+       "asciidoc.markdown",
+       "vimwiki",
+       "vimwiki.markdown"
+  ]
+  },
+  "markdownlint.filetypes": [
+     "asciidoc",
+     "asciidoctor",
+     "adoc",
+     "asciidoc.markdown",
+     "vimwiki",
+     "vimwiki.markdown"
+  ],
+  "cSpell.userWords": [
+    "Darkholme",
+    "adoc",
+    "cohama",
+    "ctrlp",
+    "ctrlpvim",
+    "dahu",
+    "dannyob",
+    "flazz",
+    "gilgigilgil",
+    "gruvbox",
+    "habamax",
+    "iamcco",
+    "jiangmiao",
+    "junegunn",
+    "konfekt",
+    "linenr",
+    "liuchengxu",
+    "majutsushi",
+    "mhinz",
+    "morhetz",
+    "neoclide",
+    "nord",
+    "ntpeters",
+    "numirias",
+    "osyo",
+    "sainnhe",
+    "scrooloose",
+    "semshi",
+    "shabadou",
+    "sheerun",
+    "shougo",
+    "startify",
+    "suda",
+    "thinca",
+    "tiagofumo",
+    "tpope",
+    "tstelzer",
+    "valloric",
+    "vifm",
+    "vslit",
+    "welpe",
+    "yats",
+    "youcompleteme"
+  ],
+  // explorer
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": true,
+  //"explorer.keyMappings.sources": {
+    //"t": "normal:k",
+    //"b": "normal:l"
+  //},
+  "explorer.keyMapping": {
+    //"t": false,
+    //"s": false,
+    //"t": "rename",
+    "n": "normal:k"
+    //"s": "normal:h",
+    //"b": "normal:l",
+    //"j": "normal:t",
+    //"h": "normal:s"
+  },
+  "coc.preferences.extensionUpdateCheck": "daily"
+}
