@@ -1,3 +1,3 @@
 # .dotfiles
 
-my old dotfiles
+my old dotfiles.
